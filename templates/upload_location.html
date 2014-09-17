@@ -1,0 +1,48 @@
+<div class="modal">
+  <ion-header-bar class="bar-dark">
+    <h1 class="title">ADD LOCATION</h1>
+
+    <div class="buttons">
+      <button class="button" ng-click="closeLoc()">BACK</button> 
+    </div>
+    
+
+  </ion-header-bar>
+  <ion-content>
+  
+  	<!-- Uploaded Video -->
+    <video class="full-image" controls width="100%">
+       <source src="vids/openingwkend.mp4" type='video/mp4' />
+     </video>
+
+    <!-- Sign up by Email Form -->
+    <form ng-submit="doDropUpload()">
+      <div class="list">
+      	<div class="row">
+		  	<div class="col edit_header">
+		  		<h4 style="border-left:5px solid #1798D4; padding-left: 5px;">DROP LOCATION</h4>
+		  	</div> <!-- /edit_header -->
+		</div> 
+
+		<!-- Rotation -->
+        <label class="item item-input">
+          <span class="input-label">CURRENT LOCATION</span>
+          <input type="text" ng-model="loginData.username">
+        </label>
+
+        <!-- Grab -->
+        <label class="item item-input">
+          <span class="input-label">PARK NAME</span>
+          <input type="text" ng-model="loginData.username">
+        </label>
+        
+        <!-- Drop Upload or add location buttons-->
+        <label class="item">
+          <button class="button button-block button-positive" type="submit">UPLOAD DROP</button>
+        </label>
+
+      </div> <!-- / List -->
+    </form>
+  </ion-content>
+</div> <!-- / modal -->
+

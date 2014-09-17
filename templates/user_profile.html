@@ -1,0 +1,150 @@
+<!-- PROFILE PAGE -->
+<ion-view title="{{profileData.username}}">
+	
+	<!-- Left header nav button -->
+	<ion-nav-buttons side="left">
+		<button menu-toggle="left"class="button button-icon icon ion-navicon"></button>
+	</ion-nav-buttons>
+
+	<!-- Right header edit profile button -->
+	<ion-nav-buttons side="right">
+		<button class="button" ng-click="editProfile()">EDIT</button>
+	</ion-nav-buttons>
+  	
+  	<ion-content class="has-header">
+
+  		<!-- Profile Poster
+		=====================================
+		-->
+	  	<div id="profile_postr">
+	  		<img src="img/profile_postr.jpg">
+	  	</div>
+  	
+  		<!-- Profile Pic + Name 
+	  	=====================================
+	  	-->
+	  	<div class="crew_profile">
+	  		
+	  		<!-- Profile Picture-->
+		  	<div class="row">
+		  		<div class="col col-33 col-offset-33 center">
+		  			<img class="profile_pic" src="img/profile_pic.png">
+		  		</div>
+		  	</div> <!-- / row -->
+
+		  	<!-- Profile Username and Status -->
+		  	<div class="row">
+		  		<div class="col center">
+	   				<h4>Brock Stone</h4>
+	   			</div>
+	   		</div>
+	   		<div class="row">
+		  		<div class="col center status">
+	   				<h5>STATUS - ON BOARD</h5>
+	   			</div>
+	   		</div>		
+
+			
+		  	<!-- DROPS, FRIENDS, FOLLOWERS COUNT
+		  	=====================================
+		  	-->
+			<div class="btm_shadow">
+				<div class="row count">
+					
+					<!-- Drop Count -->
+		   			<div class="col right_border">
+		   				<h4 class="center">834</h4>
+		   				<p class="center">DROPS</p>
+		   			</div>
+
+		   			<!-- Friends Count -->
+		   			<div class="col right_border">
+		   				<h4 class="center">923</h4>
+		   				<p class="center">FRIENDS</p>
+		   			</div>
+
+		   			<!-- Followers Count -->
+		   			<div class="col">
+		   				<h4 class="center">923</h4>
+		   				<p class="center">FOLLOWERS</p>
+		   			</div>
+
+		  		</div>
+
+		  		<!-- STATUS + FOLLOW BUTTON 
+				=================================
+		  		-->
+				<div class="row">
+				  	<div class="col">
+				  		<button class="button button-small button-block button-positive">Follow</button>
+				  	</div>
+				</div>
+			</div> <!-- / btm_shadow -->
+
+			<!-- BIO -->
+		  	<div class="row">
+		  		<div class="col">
+		  			<h4 style="border-left:5px solid #1798D4; padding-left: 5px;">RECENT DROPS</h4>
+		  		</div>
+		  		<div class="col all_drops">
+		  			<a href="#">VIEW ALL</a>
+		  		</div>
+		  	</div>
+
+		  	<!-- DROPS GALLERY 
+			=================================
+		  	-->
+		  	<div class="row">
+		  		<div class="col center">
+		  			<a href="#"><img src="img/rec_drop_01.jpg"></a>
+		  		</div>
+		  		<div class="col center">
+		  			<a href="#"><img src="img/rec_drop_02.jpg"></a>
+		  		</div>
+		  		<div class="col center">
+		  			<a href="#"><img src="img/rec_drop_03.jpg"></a>
+		  		</div>
+		  	</div>
+		  	<div class="row">
+		  		<div class="col all_drops">
+		  			
+		  		</div>
+		  	</div>
+			 
+		  	<!-- BIO 
+			=================================
+		  	-->
+		  	<div class="row">
+		  		<div class="col"><h4 style="border-left:5px solid #1798D4; padding-left: 5px;">BIO</h4></div>
+		  	</div>
+
+		  	<div class="row">
+		  		<div class="col"><p id="bio">Grew up riding and enjoying the beautiful ice coast of Pennsylvania. Been riding since I was 11. I enjoy riding park or just free-riding with my best friends. Click the follow above to see me drop! </p></div>
+		  	</div>
+
+		  	<!-- RIDER STATS
+			=================================
+		  	 -->
+		  	<div class="row">
+		  		<div class="col"><h4 style="border-left:5px solid #1798D4; padding-left: 5px;">RIDER STATISTICS</h4></div>
+		  	</div>
+
+		  	<div class="row">
+		  		<div class="col-50">
+		  			<h5 class="stat">HOME MOUNTAIN</h5>
+		  			<h5 class="stat">TERRAIN</h5>
+			  		<h5 class="stat">YEARS RIDDEN</h5>
+			  		<h5 class="stat">BOARD</h5>
+			  		<h5 class="stat">BINDINGS</h5>
+				</div>
+				<div class="col-50">
+					<h5 class="stat">7 Springs Mountain</h5>
+					<h5 class="stat">Park</h5>
+			  		<h5 class="stat">15 Years</h5>
+			  		<h5 class="stat">Burton Parkitect 157''</h5>
+			  		<h5 class="stat"> Burton Cartels (15&deg;, -15&deg;)</h5>
+				</div>
+		  	</div>
+	  	</div> <!-- / crew profile -->
+  	</ion-content>
+</ion-view>

@@ -1,0 +1,72 @@
+<div class="modal">
+  <ion-header-bar class="bar-dark">
+    <h1 class="title">Edit Profile</h1>
+     <div class="buttons">
+      <button class="button" ng-click="closeEditProfile()"><i class="ion-android-close"></i></button>
+    </div>
+  </ion-header-bar>
+  <ion-content>
+  
+            
+
+    <!-- Sign up by Email Form -->
+    <form ng-submit="doEditProfile()">
+      <div class="list">
+      	<div class="row">
+		  		<div class="col edit_header"><h4 style="border-left:5px solid #1798D4; padding-left: 5px;">USERNAME</h4></div>
+		  	</div>
+        <!-- Email Input -->
+        <label class="item item-input">
+
+          <span class="input-label">USERNAME</span>
+          <input type="text" ng-model="loginData.username">
+        </label>
+        <div class="row">
+		  		<div class="col"><h4 style="border-left:5px solid #1798D4; padding-left: 5px;">BIO</h4></div>
+		  	</div>
+        <!-- Password Input -->
+        <label class="item item-input">
+        <span class="input-label">BIO</span>
+          <textarea rows="3" cols="4" type="text" ng-model="profileData.bio" placeholder='BREIF BIO'></textarea>
+        </label>
+        <div class="row">
+		  		<div class="col"><h4 style="border-left:5px solid #1798D4; padding-left: 5px;">STATISTICS</h4></div>
+		  	</div>
+        <!-- Password Input -->
+        <label class="item item-input">
+          <span class="input-label">HOME MOUNTAIN</span>
+          <input type="text" ng-model="profileData.home_mtn">
+        </label>
+         <!-- Password Input -->
+        <label class="item item-input">
+          <span class="input-label">TERRAIN</span>
+          <input type="text" ng-model="profileData.terrain">
+        </label>
+         <!-- Password Input -->
+        <label class="item item-input">
+          <span class="input-label">YEARS RIDDEN</span>
+          <input type="text" ng-model="profileData.years_riding">
+        </label>
+        <!-- Password Input -->
+        <label class="item item-input">
+          <span class="input-label">BOARD</span>
+          <input type="text" ng-model="profileData.board">
+        </label>
+        <!-- Password Input -->
+        <label class="item item-input">
+          <span class="input-label">BINDINGS</span>
+          <input type="text" ng-model="profileData.bindings">
+        </label>
+
+        <!-- Drop In (Submit Form to Sign up) -->
+        <label class="item">
+          <button class="button button-block button-positive" type="submit">SAVE</button>
+        </label>
+
+        
+
+      </div> <!-- / List -->
+    </form>
+  </ion-content>
+</div> <!-- / modal -->
+

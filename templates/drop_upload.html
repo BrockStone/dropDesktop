@@ -1,0 +1,144 @@
+<div class="modal">
+  <ion-header-bar class="bar-dark">
+    <h1 class="title">DROP UPLOAD</h1>
+
+    <div class="buttons">
+      <button class="button" ng-click="closeDropUpload()"><i class="ion-android-close"></i></button>
+    </div>
+
+  </ion-header-bar>
+  <ion-content>
+  
+  	<!-- Uploaded Video -->
+    <video class="full-image" controls width="100%">
+       <source ng-src="{{selected_media}}" type='video/mov' />
+     </video>
+
+    <!-- Sign up by Email Form -->
+    <form>
+      <div class="list">
+      	<div class="row">
+		  	<div class="col edit_header">
+		  		<h4 style="border-left:5px solid #1798D4; padding-left: 5px;">DROP INOFRMATION</h4>
+          <p id="trick_executed">{{dropUploadData.approach}} {{dropUploadData.inversion}} {{dropUploadData.rotation}} {{dropUploadData.grab}} {{dropUploadData.slide}}</p>
+		  	</div> <!-- /edit_header -->
+		</div> 
+
+		<!-- Approach -->
+       	<label class="item item-input item-select">
+		    <div class="input-label">
+		      APPROACH
+		    </div>
+		    <select id="approach" ng-model="dropUploadData.approach">
+          <option selected value="">-</option>
+          <option value="REGULAR">REGULAR</option>
+		      <option value="SWITCH"> SWITCH</option>
+          <option value="FS"> FRONTSIDE</option>
+          <option value="BS"> BACKSIDE</option>
+          <option value="CAB"> CAB</option>
+          <option value="SWITCH-BACKSIDE"> SWITCH-BACKSIDE</option>
+		    </select>
+		</label>
+
+    <!-- Inversions -->
+        <label class="item item-input item-select">
+          <span class="input-label">INVERSION</span>
+          <select id="approach" ng-model="dropUploadData.inversion">
+          <option selected value="">-</option>
+          <option value="BACK-FLIP">Back-Flip</option>
+          <option value="FRONT-FLIP">Front-Flip;</option>
+          <option value="McTWIST">McTwist</option>
+          <option value="DOUBLE McTWIST">Double McTwist</option>
+          <option value="LANDO-ROLL">Lando-Roll</option>
+          <option value="MISTY">Misty</option>
+          <option value="RODEO">Rodeo</option>
+          <option value="CORKED">Corked</option>
+          <option value="DOUBLE-CORK">Double-Cork</option>
+          <option value="TRIPLE-CORK">Triple-Cork</option>
+        </select>
+        </label>
+    
+		<!-- Rotation -->
+        <label class="item item-input item-select">
+          <span class="input-label">ROTATION</span>
+          <select id="approach" ng-model="dropUploadData.rotation">
+          <option selected value="">-</option>
+          <option value="180">180&deg;</option>
+          <option value="270">270&deg;</option>
+          <option value="360">360&deg;</option>
+          <option value="450">450&deg;</option>
+          <option value="540">540&deg;</option>
+          <option value="720">720&deg;</option>
+          <option value="900">900&deg;</option>
+          <option value="1080">1080&deg;</option>
+          <option value="1260">1260&deg;</option>
+          <option value="1440">1440&deg;</option>
+          <option value="1660">1660&deg;</option>
+        </select>
+        </label>
+
+        <!-- Grab -->
+        <label class="item item-input item-select">
+          <span class="input-label">GRAB</span>
+          <select id="approach" ng-model="dropUploadData.grab">
+          <option selected value="">-</option>
+          <option value="CANADIEN BACON">Canadien Bacon</option>
+          <option value="CANNONBALL">Cannonball</option>
+          <option value="CHICKEN SALAD">Chicken Salad</option>
+          <option value="CRAIL">Crail</option>
+          <option value="INDY">Indy</option>
+          <option value="Japan">Japan</option>
+          <option value="LEIN">Lein</option>
+          <option value="MELON">Melon</option>
+          <option value="METHOD">Method</option>
+          <option value="MINDY">Mindy</option>
+          <option value="MUTE">Mute</option>
+          <option value="NOSE">Nose</option>
+          <option value="ROAST BEEF">Roast Beef</option>
+          <option value="ROCKET AIR">Rocket air</option>
+          <option value="HOLY CRAIL">Sage Kotsenburg's Holy Crail</option>
+          <option value="SEATBELT">Seatbelt</option>
+          <option value="SLOB">Slob</option>
+          <option value="SQUIRREL">Squirrel</option>
+          <option value="SUITCASE">Suitcase</option>
+          <option value="SUPER MINDY">Super Mindy</option>
+          <option value="TAIL">Tail</option>
+          <option value="TAILFISH">Tailfish</option>
+          <option value="TAIPAN AIR">Taipan Air</option>
+        </select>
+        </label>
+
+        <!-- Slide -->
+         <label class="item item-input item-select">
+          <span class="input-label">SLIDES</span>
+          <select id="approach" ng-model="dropUploadData.slide">
+            <option selected value="">-</option>
+            <option value="50-50">50-50</option>
+            <option value="BOARDSLIDE">Boardslide</option>
+            <option value="LIPSLIDE">Lipslide</option>
+            <option value="NOSESLIDE">Noseslide</option>
+            <option value="TAILSLIDE">Tailslide</option>
+            <option value="NOSEPRESS">Nosepress</option>
+            <option value="TAILPRESS">Tailpress</option>
+            <option value="MJ">MJ</option>
+          </select>
+        </label>
+
+        <!-- Park Feature -->
+        <label class="item item-input">
+        <span class="input-label">PARK FEATURE</span>
+          <input type="text" ng-model="dropUploadData.parkFeature" placeholder="Down Rail, Ledge, Kicker">
+        </label>
+
+
+        
+        <!-- Drop Upload or add location buttons-->
+        <label class="item">
+          <button class="button button-block button-positive" ng-click="getDropLocation()">ADD LOCATION</button>
+        </label>
+
+      </div> <!-- / List -->
+    </form>
+  </ion-content>
+</div> <!-- / modal -->
+
