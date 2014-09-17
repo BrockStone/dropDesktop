@@ -1,25 +1,57 @@
-<div class="row">
+<div id="home">
   
-  <div class="11u">
+  <div class="row">
   
-    <img src="img/drop_logo_main.png">
+  <div class="9u">
+  
+    <a href="#/"><img src="img/drop_logo_main.png"></a>
     </div>
 
-  <div class="1u">
-    <h3><a id="login_btn" href="">LOGIN</a></h3>
+  <div class="3u" ng-controller="loginCtrl">
+   <p><a id="login_btn" href="">Welcome back {{user.displayName}}!</a></p>
   </div>
 </div> 
 
 
-<div class="container">
-      <!-- Header -->
-        <div id="header" class="row">
-          <div id="cta" class="12u center_align">
-            <h1>BS 360&deg; METHOD</h1>
-            <p>Show off your riding skills, personal riding experiences and riding stlyes. Drop in...</p>
-            <a id="facebook" href="">Drop in with Twitter</a><a id="facebook" href="">Drop in with Facebook</a>
+  <div class="container">
+        <!-- Header -->
+          <div id="header" class="row">
+            <div id="cta" class="12u center_align">
+              <h1>BS 360&deg; METHOD</h1>
+              <p>Show off your riding skills, personal riding experiences and riding stlyes. Drop in...</p>
+              <a id="facebook" href="" ng-click="login('facebook');">Drop in with Twitter</a><a id="facebook" href="">Drop in with Facebook</a>
+            </div>
           </div>
-        </div>
-</div>      
+  </div> 
+</div>
+
+<div id="home_sec_one">
+  
+  <div class="row">
+  
+  <div class="9u">
+  
+    <a href="#/"><img src="img/drop_logo_main.png"></a>
+    </div>
+
+  <div class="3u" ng-controller="loginCtrl">
+   <p><a id="login_btn" href="">Welcome back {{user.displayName}}!</a></p>
+  </div>
+</div> 
+
+
+  <div class="container">
+        <!-- Header -->
+          <div id="header" class="row">
+            <div id="cta" class="12u center_align">
+              <h1>BS 360&deg; METHOD</h1>
+              <p>Show off your riding skills, personal riding experiences and riding stlyes. Drop in...</p>
+              <a id="facebook" href="" ng-click="login('facebook');">Drop in with Twitter</a><a id="facebook" href="">Drop in with Facebook</a>
+            </div>
+          </div>
+  </div> 
+</div>
+
+
 
 

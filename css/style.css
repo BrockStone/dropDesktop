@@ -1,5 +1,5 @@
 body {
-	background-image: url(../img/method_sm.jpg);
+	/*background-image: url(../img/method_sm.jpg);*/
 	color: #b2b9bC;
 	font-family: 'Source Sans Pro', sans-serif;
 	font-weight: 400;
@@ -41,13 +41,10 @@ h1, h2, h3, h4, h5, h6 {
 .center_align{
 	text-align: center;
 }
-header h1{
-	font-size: 200px;
-}
 
 #cta h1{
-	font-size: 5em;
-	padding-top: 250px;
+	font-size: 4em;
+	padding-top: 200px;
 }
 #cta p{
 	font-size: 1.2em;
@@ -73,4 +70,10 @@ header h1{
 #login_btn{
 	color: #ffffff;
 	text-decoration: none;
+}
+#home{
+	width: 100%;
+	height:95vh;
+	background-image: url(../img/method_sm.jpg);
+
 }
