@@ -77,3 +77,24 @@ h1, h2, h3, h4, h5, h6 {
 	background-image: url(../img/method_sm.jpg);
 
 }
+
+/*CONSOL*/
+
+
+#consol_nav li {
+	list-style-type: none;
+
+}
+#consol_nav li a{
+	color: #05C9F0;
+	display: block;
+	line-height: 125px;
+	text-align: center;
+	width: 125px;
+	height: 125px;
+	/*padding: 50px 25px;*/
+	text-decoration: none;
+	background-color: #2D2D2D;
+	margin-bottom: 5px;
+
+}
