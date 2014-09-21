@@ -5,6 +5,18 @@ angular.module('drop', ['ngRoute', 'firebase'])
 // .factory('drops', function($firebase, fbURL) {
 //   return $firebase(new Firebase(fbURL)).$asArray();
 // })
+
+
+
+/////////////////////////
+
+
+    // APP ROUTES 
+
+
+/////////////////////////
+
+
  
 .config(function($routeProvider) {
   $routeProvider
@@ -17,13 +29,19 @@ angular.module('drop', ['ngRoute', 'firebase'])
       templateUrl:'detail.html'
     })
     .when('/drop', {
-      controller:'CreateCtrl',
+      controller:'dropsCtrl',
       templateUrl:'templates/menu.html'
+    })
+    .when('/drop_upload', {
+      controller:'uploadCtrl',
+      templateUrl:'templates/drop_upload.html'
     })
     .otherwise({
       redirectTo:'/'
     });
 })
+
+
 
 /////////////////////////
 
@@ -33,6 +51,8 @@ angular.module('drop', ['ngRoute', 'firebase'])
 
 
 /////////////////////////
+
+
 
 .controller('loginCtrl', function($scope, $rootScope, $location, $firebase, $firebaseSimpleLogin) {
   $scope.goToDrop = function() {
@@ -95,10 +115,29 @@ angular.module('drop', ['ngRoute', 'firebase'])
   });
 }) // loginCtrl end
 
+
+
+/////////////////////////
+
+
+    // DROP UPLOAD
+
+
+/////////////////////////
+
  
 
+.controller('uploadCtrl', function($scope, $location, $timeout, $http) {
 
-.controller('CreateCtrl', function($scope, $location, $timeout) {
+  $scope.dropUploadData = {};
+  var file = $scope.dropUploadData; 
+  console.log(file);
+
+  
+
+
+
+
   // $scope.save = function() {
   //     Projects.$add($scope.project).then(function(data) {
   //         $location.path('/');
@@ -106,24 +145,6 @@ angular.module('drop', ['ngRoute', 'firebase'])
   // };
 })
  
-.controller('EditCtrl',
-  function($scope, $location, $routeParams) {
-  //   var projectId = $routeParams.projectId,
-  //       projectIndex;
- 
-  //   $scope.projects = Projects;
-  //   projectIndex = $scope.projects.$indexFor(projectId);
-  //   $scope.project = $scope.projects[projectIndex];
- 
-  //   $scope.destroy = function() {
-  //       $scope.projects.$remove($scope.project).then(function(data) {
-  //           $location.path('/');
-  //       });
-  //   };
- 
-  //   $scope.save = function() {
-  //       $scope.projects.$save($scope.project).then(function(data) {
-  //          $location.path('/');
-  //       });
-  //   };
+.controller('dropsCtrl',function($scope, $location, $rootScope) {
+  console.log($scope.user);
 });

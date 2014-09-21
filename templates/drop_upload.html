@@ -1,47 +1,73 @@
-<div class="modal">
-  <ion-header-bar class="bar-dark">
-    <h1 class="title">DROP UPLOAD</h1>
-
-    <div class="buttons">
-      <button class="button" ng-click="closeDropUpload()"><i class="ion-android-close"></i></button>
+<div id="consol">
+  <div class="row">
+    <div class="12u center_align">
+      
+      <img src="img/drop_logo_consol.png"><br/>
     </div>
+  </div>
 
-  </ion-header-bar>
-  <ion-content>
-  
-  	<!-- Uploaded Video -->
-    <video class="full-image" controls width="100%">
-       <source ng-src="{{selected_media}}" type='video/mov' />
-     </video>
+  <div class="row">
+    <div class="12u center_align">    
 
-    <!-- Sign up by Email Form -->
-    <form>
-      <div class="list">
-      	<div class="row">
-		  	<div class="col edit_header">
-		  		<h4 style="border-left:5px solid #1798D4; padding-left: 5px;">DROP INOFRMATION</h4>
-          <p id="trick_executed">{{dropUploadData.approach}} {{dropUploadData.inversion}} {{dropUploadData.rotation}} {{dropUploadData.grab}} {{dropUploadData.slide}}</p>
-		  	</div> <!-- /edit_header -->
-		</div> 
+      <p>
+      <ul id="consol_nav">
+        <li><a href="#/drop_upload">DROP IT</a></li>
+        <li><a href="">PROFILE</a></li>
+        <li><a href="">CREW</a></li>
+        <li><a href="">LOVE</a></li>
+        <li><a href="">SETTINGS</a></li>
+      </ul>
+      </p>
+      <p>noienrfoeno</p>
+    </div>
+  </div>  
 
-		<!-- Approach -->
-       	<label class="item item-input item-select">
-		    <div class="input-label">
-		      APPROACH
-		    </div>
-		    <select id="approach" ng-model="dropUploadData.approach">
+    <div class="row">
+      <div class="12u center_align">
+        <form>
+        <p>{{dropUploadData.approach}} - {{dropUploadData.inversion}} - {{dropUploadData.rotation}}</p>
+
+        <div id="upload_form">
+        <!-- Park Feature -->
+
+        <a class="btn btn-outline" href="">+ ADD DROP MEDIA</a><br/>
+       
+        <input class="upload_form_control" type="text" ng-model="dropUploadData.approach" placeholder="APPROACH - Backside, Frontside, Cab..."><br/>
+
+      
+        <input class="upload_form_control" type="text" ng-model="dropUploadData.inversion" placeholder="INVERSIONS - Frontflip, BackFlip, Cork"><br/>
+
+        
+        <input class="upload_form_control" type="text" ng-model="dropUploadData.rotation" placeholder="ROTATION - 180&deg;, 270&deg;, 360&deg;... "><br/>
+
+        
+        <input class="upload_form_control" type="text" ng-model="dropUploadData.grab" placeholder="GRAB - Method, Mute, Stalefish..."><br/>
+
+         <input class="upload_form_control" type="text" ng-model="dropUploadData.slide" placeholder="SLIDE - Boardslide, 50-50, Lipslide..."><br/>
+        
+        <a class="btn btn-upload" href="">UPLOAD YOUR DROP</a>
+
+
+
+
+          <!-- Approach -->
+        <!-- <label class="item item-input item-select">
+        <div class="input-label">
+          APPROACH
+        </div>
+        <select id="approach" ng-model="dropUploadData.approach">
           <option selected value="">-</option>
           <option value="REGULAR">REGULAR</option>
-		      <option value="SWITCH"> SWITCH</option>
+          <option value="SWITCH"> SWITCH</option>
           <option value="FS"> FRONTSIDE</option>
           <option value="BS"> BACKSIDE</option>
           <option value="CAB"> CAB</option>
           <option value="SWITCH-BACKSIDE"> SWITCH-BACKSIDE</option>
-		    </select>
-		</label>
+        </select>
+    </label> -->
 
     <!-- Inversions -->
-        <label class="item item-input item-select">
+      <!--   <label class="item item-input item-select">
           <span class="input-label">INVERSION</span>
           <select id="approach" ng-model="dropUploadData.inversion">
           <option selected value="">-</option>
@@ -56,10 +82,10 @@
           <option value="DOUBLE-CORK">Double-Cork</option>
           <option value="TRIPLE-CORK">Triple-Cork</option>
         </select>
-        </label>
+        </label> -->
     
-		<!-- Rotation -->
-        <label class="item item-input item-select">
+    <!-- Rotation -->
+        <!-- <label class="item item-input item-select">
           <span class="input-label">ROTATION</span>
           <select id="approach" ng-model="dropUploadData.rotation">
           <option selected value="">-</option>
@@ -75,10 +101,10 @@
           <option value="1440">1440&deg;</option>
           <option value="1660">1660&deg;</option>
         </select>
-        </label>
+        </label> -->
 
         <!-- Grab -->
-        <label class="item item-input item-select">
+     <!--    <label class="item item-input item-select">
           <span class="input-label">GRAB</span>
           <select id="approach" ng-model="dropUploadData.grab">
           <option selected value="">-</option>
@@ -107,9 +133,9 @@
           <option value="TAIPAN AIR">Taipan Air</option>
         </select>
         </label>
-
+ -->
         <!-- Slide -->
-         <label class="item item-input item-select">
+         <!-- <label class="item item-input item-select">
           <span class="input-label">SLIDES</span>
           <select id="approach" ng-model="dropUploadData.slide">
             <option selected value="">-</option>
@@ -122,23 +148,19 @@
             <option value="TAILPRESS">Tailpress</option>
             <option value="MJ">MJ</option>
           </select>
-        </label>
+        </label> -->
 
-        <!-- Park Feature -->
-        <label class="item item-input">
-        <span class="input-label">PARK FEATURE</span>
-          <input type="text" ng-model="dropUploadData.parkFeature" placeholder="Down Rail, Ledge, Kicker">
-        </label>
+          
+        </form>
+       
+      </div>  
+    </div>
+  
+  	
+
+		
+        
 
 
         
-        <!-- Drop Upload or add location buttons-->
-        <label class="item">
-          <button class="button button-block button-positive" ng-click="getDropLocation()">ADD LOCATION</button>
-        </label>
-
-      </div> <!-- / List -->
-    </form>
-  </ion-content>
-</div> <!-- / modal -->
-
+        
