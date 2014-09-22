@@ -168,9 +168,10 @@ background: none;
 #topbar{
 	background-color: #21A2EA; /*DROP BLUE*/
 	height: 15vh;
-	
-	width: 99%;
+	width: 98.5%;
 	margin-left: 50px;
+	margin-top: -10px;
+	
 }
 .topbar_nav{
 	width: 130px;
@@ -248,9 +249,10 @@ background: none;
 #card_top{
 	width: 490px;
 	height: 100px;
-	padding: 5px;
+	padding: 10px 5px;
 	background-color: #2d2d2d;
 }
+
 #card_btm{
 	width: 490px;
 	height: 205px;
@@ -369,4 +371,78 @@ img#loc{
 }
 .menu{
 	padding-top: 100px;
+}
+
+/*profile*/
+
+
+
+#drop_profile{
+	width: 750px;
+	height: 800px;
+	margin: 0 auto;
+}
+#drop_profile ul{
+	margin-left: -50px;
+}
+#drop_profile ul li{
+	list-style-type: none;
+	float: left;
+	text-align: center;
+}
+#drop_profile ul li a{
+	display: block;
+	width: 155px;
+	height: 108px;
+	text-decoration: none;
+	color: #ffffff;
+	padding-top: 15px;
+	background-color: #2d2d2d;
+
+}
+#drop_profile ul li a:hover{
+	background-color: #2d2d2d;
+	color: #21A2EA;
+	transition: all .4s ease-in-out;
+
+}
+#drop_profile img{
+	float: left;
+}
+#drop_profile h2{
+	font-family: 'Fjalla One', sans-serif;
+	font-size: 1.8em;
+	color: #2d2d2d;
+
+}
+#drop_profile h3{
+	font-family: 'Fjalla One', sans-serif;
+	font-size: 1.2em;
+	color: #2d2d2d;
+
+}
+#drop_profile span{
+	font-size: 40px;
+	color: #21A2EA;
+}
+#profile_info{
+	width: 550px;
+	height: 200px;
+	float: right;
+	padding-left: 15px;
+	margin-bottom: 20px;
+}
+#btn{
+	color: #2d2d2d;
+	text-decoration: none;
+	padding: 20px 263px;
+	background-color: #21A2EA;
+}
+
+#btn:hover{
+	background-color: #21A2EA;
+}
+.stat{
+	color: #21A2EA;
+	text-decoration: none;
 }

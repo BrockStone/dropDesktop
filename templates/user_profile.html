@@ -1,150 +1,73 @@
-<!-- PROFILE PAGE -->
-<ion-view title="{{profileData.username}}">
-	
-	<!-- Left header nav button -->
-	<ion-nav-buttons side="left">
-		<button menu-toggle="left"class="button button-icon icon ion-navicon"></button>
-	</ion-nav-buttons>
+<div id="consol">
 
-	<!-- Right header edit profile button -->
-	<ion-nav-buttons side="right">
-		<button class="button" ng-click="editProfile()">EDIT</button>
-	</ion-nav-buttons>
-  	
-  	<ion-content class="has-header">
 
-  		<!-- Profile Poster
-		=====================================
-		-->
-	  	<div id="profile_postr">
-	  		<img src="img/profile_postr.jpg">
-	  	</div>
-  	
-  		<!-- Profile Pic + Name 
-	  	=====================================
-	  	-->
-	  	<div class="crew_profile">
-	  		
-	  		<!-- Profile Picture-->
-		  	<div class="row">
-		  		<div class="col col-33 col-offset-33 center">
-		  			<img class="profile_pic" src="img/profile_pic.png">
-		  		</div>
-		  	</div> <!-- / row -->
 
-		  	<!-- Profile Username and Status -->
-		  	<div class="row">
-		  		<div class="col center">
-	   				<h4>Brock Stone</h4>
-	   			</div>
-	   		</div>
-	   		<div class="row">
-		  		<div class="col center status">
-	   				<h5>STATUS - ON BOARD</h5>
-	   			</div>
-	   		</div>		
+    <div class="row">
+      <div id="topbar" class="12u fixed">
+        <img src="img/drop_logo_consol.png">
+        
+          <a class="topbar_nav" href="#/drop_upload">DROP IT</a>
+          <a class="topbar_nav" href="">PROFILE</a>
+          <a class="topbar_nav" href="">CREW</a>
+          <a class="topbar_nav" href="">LOVE</a>
+          <a class="topbar_nav" href="">SETTINGS</a>
+        
+      </div>
+    </div>
 
-			
-		  	<!-- DROPS, FRIENDS, FOLLOWERS COUNT
-		  	=====================================
-		  	-->
-			<div class="btm_shadow">
-				<div class="row count">
-					
-					<!-- Drop Count -->
-		   			<div class="col right_border">
-		   				<h4 class="center">834</h4>
-		   				<p class="center">DROPS</p>
-		   			</div>
 
-		   			<!-- Friends Count -->
-		   			<div class="col right_border">
-		   				<h4 class="center">923</h4>
-		   				<p class="center">FRIENDS</p>
-		   			</div>
 
-		   			<!-- Followers Count -->
-		   			<div class="col">
-		   				<h4 class="center">923</h4>
-		   				<p class="center">FOLLOWERS</p>
-		   			</div>
+    <div class="row menu">
+      <div class="12u">
+      
+      <div id="drop_profile">
+        
+        <img src="img/pro_pic_lrg.png">
 
-		  		</div>
+        <div id="profile_info">
+          <h2>BROCK STONE</h2>
+          <ul>
+            <li><a style="margin-right: 5px;" href=""><span>5</span><br/>DROPS</a></li>
+            <li><a style="margin-right: 5px;" href=""><span>22</span><br/>RADS</a></li>
+            <li><a href=""><span>15</span><br/>FRIENDS</a></li>
+          </ul>
+        </div>
 
-		  		<!-- STATUS + FOLLOW BUTTON 
-				=================================
-		  		-->
-				<div class="row">
-				  	<div class="col">
-				  		<button class="button button-small button-block button-positive">Follow</button>
-				  	</div>
-				</div>
-			</div> <!-- / btm_shadow -->
 
-			<!-- BIO -->
-		  	<div class="row">
-		  		<div class="col">
-		  			<h4 style="border-left:5px solid #1798D4; padding-left: 5px;">RECENT DROPS</h4>
-		  		</div>
-		  		<div class="col all_drops">
-		  			<a href="#">VIEW ALL</a>
-		  		</div>
-		  	</div>
 
-		  	<!-- DROPS GALLERY 
-			=================================
-		  	-->
-		  	<div class="row">
-		  		<div class="col center">
-		  			<a href="#"><img src="img/rec_drop_01.jpg"></a>
-		  		</div>
-		  		<div class="col center">
-		  			<a href="#"><img src="img/rec_drop_02.jpg"></a>
-		  		</div>
-		  		<div class="col center">
-		  			<a href="#"><img src="img/rec_drop_03.jpg"></a>
-		  		</div>
-		  	</div>
-		  	<div class="row">
-		  		<div class="col all_drops">
-		  			
-		  		</div>
-		  	</div>
-			 
-		  	<!-- BIO 
-			=================================
-		  	-->
-		  	<div class="row">
-		  		<div class="col"><h4 style="border-left:5px solid #1798D4; padding-left: 5px;">BIO</h4></div>
-		  	</div>
+        <a id="btn" href="">+ FOLLOW RIDER</a>
 
-		  	<div class="row">
-		  		<div class="col"><p id="bio">Grew up riding and enjoying the beautiful ice coast of Pennsylvania. Been riding since I was 11. I enjoy riding park or just free-riding with my best friends. Click the follow above to see me drop! </p></div>
-		  	</div>
+        <h3>ABOUT</h3>
 
-		  	<!-- RIDER STATS
-			=================================
-		  	 -->
-		  	<div class="row">
-		  		<div class="col"><h4 style="border-left:5px solid #1798D4; padding-left: 5px;">RIDER STATISTICS</h4></div>
-		  	</div>
+        <p>I Hail from the "Ice-Coast", Pennsylvania to be exact. Been Riding since I was 12. I love to ride park and all mountain. Follow me to watch my drops! Keep it rad!</p>
 
-		  	<div class="row">
-		  		<div class="col-50">
-		  			<h5 class="stat">HOME MOUNTAIN</h5>
-		  			<h5 class="stat">TERRAIN</h5>
-			  		<h5 class="stat">YEARS RIDDEN</h5>
-			  		<h5 class="stat">BOARD</h5>
-			  		<h5 class="stat">BINDINGS</h5>
-				</div>
-				<div class="col-50">
-					<h5 class="stat">7 Springs Mountain</h5>
-					<h5 class="stat">Park</h5>
-			  		<h5 class="stat">15 Years</h5>
-			  		<h5 class="stat">Burton Parkitect 157''</h5>
-			  		<h5 class="stat"> Burton Cartels (15&deg;, -15&deg;)</h5>
-				</div>
-		  	</div>
-	  	</div> <!-- / crew profile -->
-  	</ion-content>
-</ion-view>
+        <hr>
+
+        <h3>RIDER STATISTICS</h3>
+
+        <p>HOME MOUNTAIN - <a class="stat" href="">7 Springs Mountain Resort, Champion PA, 15601</a></p>
+
+        <p>PREFEERD TERRAIN - <a class="stat" href="">PARK / ALL - MOUNTAIN</a></p>
+
+        <p>MY BOARD - <a class="stat" href="">Burton Parkitect 157''</a></p>
+
+        <p>MY BINDINGS / STANCE - <a class="stat" href="">Burton Mission ( LEFT - -15&deg;</a></p>
+
+        <h3>RECENT DROPS</h3>
+
+        <img src="img/drop_01.png">
+        <img src="img/drop_01.png">
+        <img src="img/drop_01.png">
+
+
+
+
+
+
+
+      </div>
+      
+        
+      </div> <!-- 12u -->
+    </div> <!-- row -->
+</div>

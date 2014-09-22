@@ -24,9 +24,9 @@ angular.module('drop', ['ngRoute', 'firebase'])
       controller:'loginCtrl',
       templateUrl:'templates/welcome_to_drop.html'
     })
-    .when('/edit/:projectId', {
-      controller:'EditCtrl',
-      templateUrl:'detail.html'
+    .when('/userProfile', {
+      controller:'login',
+      templateUrl:'templates/user_profile.html'
     })
     .when('/drop', {
       controller:'dropsCtrl',
