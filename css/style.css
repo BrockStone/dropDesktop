@@ -93,6 +93,11 @@ h1, h2, h3, h4, h5, h6 {
 	width: 100%;
 	height:95vh;
 	background-image: url(../img/method_sm.jpg);
+	position: fixed;
+	top: 0;
+	z-index: -1;
+	
+
 
 }
 
@@ -167,17 +172,17 @@ background: none;
 
 #topbar{
 	background-color: #21A2EA; /*DROP BLUE*/
-	height: 15vh;
-	width: 98.5%;
+	height: 10vh;
+	width: 98.8%;
 	margin-left: 50px;
 	margin-top: -10px;
 	
 }
 .topbar_nav{
 	width: 130px;
-	height: 120px;
-	line-height: 120px;
-	font-size: .9em;
+	height: 80px;
+	line-height: 80px;
+	font-size: .8em;
 	color: #ffffff;
 	text-align: center;
 	text-decoration: none;
@@ -209,15 +214,16 @@ background: none;
 	
 }
 #drop_card{
-	height: 380px;
+	height: 400px;
 	width: 1165px;
 	margin: 0 auto;
+	border: 10px solid #ffffff;
 
 }
 #drop_card_info{
 	background-color: #ffffff;
 	height: 380px;
-	width: 490px;
+	width: 470px;
 	float: right;
 	
 	font-family: 'Questrial', sans-serif;
@@ -239,15 +245,18 @@ background: none;
 	line-height: 20px;
 }
 .card_tricks{
-	margin-top: -25px;
+	margin-top: -35px;
 }
 .card_tricks a{
-	color: #21A2EA;
+	margin-bottom: 0px;
+	color: #ffffff;
+	padding: 5px;
 	font-size: 15px;
 	text-decoration: none;
+	background-color: #21A2EA; 
 }
 #card_top{
-	width: 490px;
+	width: 470px;
 	height: 100px;
 	padding: 10px 5px;
 	background-color: #2d2d2d;
@@ -259,7 +268,7 @@ background: none;
 	padding: 10px;
 }
 #card_footer{
-	width: 490px;
+	width: 470px;
 	height: 75px;
 	background-color: #21A2EA;
 	padding: 1px;
@@ -381,6 +390,7 @@ img#loc{
 	width: 750px;
 	height: 800px;
 	margin: 0 auto;
+
 }
 #drop_profile ul{
 	margin-left: -50px;
@@ -416,7 +426,7 @@ img#loc{
 
 }
 #drop_profile h3{
-	font-family: 'Fjalla One', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-size: 1.2em;
 	color: #2d2d2d;
 
@@ -445,4 +455,61 @@ img#loc{
 .stat{
 	color: #21A2EA;
 	text-decoration: none;
+}
+
+#home_sec_one{
+	background-color: #58C7F3;
+	padding: 0px;
+}
+#home_sec_one h2{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 2em;
+	color: #2d2d2d;
+	margin: 50px;
+}
+#home_sec_one img{
+	margin-bottom: -10px;
+}
+#home_sec_crew{
+	margin-top: 95vh;
+	background-color: rgba(255,255,255,0.8);
+}
+#home_sec_crew h3{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 2em;
+	color: #2d2d2d;
+}
+#home_sec_crew ul li{
+	list-style-type: square;
+	margin: 20px;
+	font-size: 1.2em;
+}
+
+
+
+
+#footer_home{
+	background-color: #282828;
+	height: 500px;
+	padding: 25px;
+}
+#footer_home img{
+	margin: 35px;
+}
+#footer_home ul{
+	margin-left: 200px;
+}
+#footer_home ul li{
+	float: left;
+	width: 150px;
+	list-style-type: none;
+}
+#footer_home ul li a{
+	font-size: .8em;
+	text-decoration: none;
+	color: #ffffff;
+}
+#footer_home p{
+	color: #ffffff;
+	font-size: .7em;
 }
