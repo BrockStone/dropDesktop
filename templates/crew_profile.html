@@ -1,149 +1,82 @@
-<!-- PROFILE PAGE -->
-<ion-view title="{{profileData.username}}">
-	
-	<!-- Left header nav button -->
-	<ion-nav-buttons side="left">
-		<button menu-toggle="left"class="button button-icon icon ion-navicon"></button>
-	</ion-nav-buttons>
+<div id="consol">
 
-	<!-- Right header edit profile button -->
-	<ion-nav-buttons side="right">
-		<button class="button" ng-click="editProfile()">EDIT</button>
-	</ion-nav-buttons>
-  	
-  	<ion-content class="has-header">
 
-  		<!-- Profile Poster
-		=====================================
-		-->
-	  	<div id="profile_postr">
-	  		<img src="img/profile_postr.jpg">
-	  	</div>
-  	
-  		<!-- Profile Pic + Name 
-	  	=====================================
-	  	-->
-	  	<div class="crew_profile">
-	  		
-	  		<!-- Profile Picture-->
-		  	<div class="row">
-		  		<div class="col col-33 col-offset-33 center">
-		  			<img class="profile_pic" src="img/profile_pic.png">
-		  		</div>
-		  	</div> <!-- / row -->
 
-		  	<!-- Profile Username and Status -->
-		  	<div class="row">
-		  		<div class="col center">
-	   				<h4>Brock Stone</h4>
-	   			</div>
-	   		</div>
-	   		<div class="row">
-		  		<div class="col center status">
-	   				<h5>STATUS - ON BOARD</h5>
-	   			</div>
-	   		</div>		
+    <div class="row">
+      <div id="topbar" class="12u fixed">
+        <img src="img/drop_logo_consol.png">
+        
+          <a class="topbar_nav" href="#/drop_upload">DROP IT</a>
+          <a class="topbar_nav" href="#/userProfile">PROFILE</a>
+          <a class="topbar_nav" href="">CREW</a>
+          <a class="topbar_nav" href="">LOVE</a>
+          <a class="topbar_nav" href="">SETTINGS</a>
+        
+      </div>
+    </div>
 
-			
-		  	<!-- DROPS, FRIENDS, FOLLOWERS COUNT
-		  	=====================================
-		  	-->
-			<div class="btm_shadow">
-				<div class="row count">
-					
-					<!-- Drop Count -->
-		   			<div class="col right_border">
-		   				<h4 class="center">834</h4>
-		   				<p class="center">DROPS</p>
-		   			</div>
 
-		   			<!-- Friends Count -->
-		   			<div class="col right_border">
-		   				<h4 class="center">923</h4>
-		   				<p class="center">FRIENDS</p>
-		   			</div>
 
-		   			<!-- Followers Count -->
-		   			<div class="col">
-		   				<h4 class="center">923</h4>
-		   				<p class="center">FOLLOWERS</p>
-		   			</div>
+    <div class="row">
 
-		  		</div>
+      <div class="12u">
+      
+        <img id="cover" src="img/cover.png">
+      </div> <!-- 12u -->
+    </div> <!-- row -->
 
-		  		<!-- STATUS + FOLLOW BUTTON 
-				=================================
-		  		-->
-				<div class="row">
-				  	<div class="col">
-				  		<button class="button button-small button-block button-positive">Follow</button>
-				  	</div>
-				</div>
-			</div> <!-- / btm_shadow -->
+    <div class="row">
 
-			<!-- BIO -->
-		  	<div class="row">
-		  		<div class="col">
-		  			<h4 style="border-left:5px solid #1798D4; padding-left: 5px;">RECENT DROPS</h4>
-		  		</div>
-		  		<div class="col all_drops">
-		  			<a href="#">VIEW ALL</a>
-		  		</div>
-		  	</div>
+      <div id="crew_img" class="12u">
+        <img src="img/pro_pic_lrg.png">
 
-		  	<!-- DROPS GALLERY 
-			=================================
-		  	-->
-		  	<div class="row">
-		  		<div class="col center">
-		  			<a href="#"><img src="img/rec_drop_01.jpg"></a>
-		  		</div>
-		  		<div class="col center">
-		  			<a href="#"><img src="img/rec_drop_02.jpg"></a>
-		  		</div>
-		  		<div class="col center">
-		  			<a href="#"><img src="img/rec_drop_03.jpg"></a>
-		  		</div>
-		  	</div>
-		  	<div class="row">
-		  		<div class="col all_drops">
-		  			
-		  		</div>
-		  	</div>
-			 
-		  	<!-- BIO 
-			=================================
-		  	-->
-		  	<div class="row">
-		  		<div class="col"><h4 style="border-left:5px solid #1798D4; padding-left: 5px;">BIO</h4></div>
-		  	</div>
+        <h1>BROCK STONE</h1>
 
-		  	<div class="row">
-		  		<div class="col"><p id="bio">Grew up riding and enjoying the beautiful ice coast of Pennsylvania. Been riding since I was 11. I enjoy riding park or just free-riding with my best friends. Click the follow above to see me drop! </p></div>
-		  	</div>
+         <div id="drop_profile">
+          <ul>
+            <li><a style="margin-right: 5px;" href=""><span>5</span><br/>DROPS</a></li>
+            <li><a style="margin-right: 5px;" href=""><span>22</span><br/>RADS</a></li>
+            <li><a href=""><span>15</span><br/>FRIENDS</a></li>
+          </ul>
+        </div>
 
-		  	<!-- RIDER STATS
-			=================================
-		  	 -->
-		  	<div class="row">
-		  		<div class="col"><h4 style="border-left:5px solid #1798D4; padding-left: 5px;">RIDERS</h4></div>
-		  	</div>
 
-		  	<div class="row">
-		  		<div class="col-50">
-		  			<a href=""><h5 class="stat">Brock Stone</h5></a>
-		  			<a href=""><h5 class="stat">Brendan Kuntz</h5></a>
-			  		<a href=""><h5 class="stat">Jeff Smail</h5></a>
-			  		<a href=""><h5 class="stat">Nick Loyaconna</h5></a>
-				</div>
-				<div class="col-50">
-					<h5 class="stat">7 Springs Mountain</h5>
-					<h5 class="stat">Park</h5>
-			  		<h5 class="stat">15 Years</h5>
-			  		<h5 class="stat">Burton Parkitect 157''</h5>
-			  		<h5 class="stat"> Burton Cartels (15&deg;, -15&deg;)</h5>
-				</div>
-		  	</div>
-	  	</div> <!-- / crew profile -->
-  	</ion-content>
-</ion-view>
+
+      </div> <!-- 12u -->
+    </div> <!-- row -->
+
+    <div class="row">
+
+      <div id="profile_info" class="4u">
+
+        <a href="">FOLLOW RIDER</a>
+
+        <h2 class="rider">RIDER DATA</h2>
+        <h3>HOME MOUNTAIN</h3>
+        <p>7 SPRINGS MOUNTAIN RESORT</p>
+        
+        <h3>RIDING TERRAIN</h3>
+        <p>PARK / ALL MOUNTAIN</p>
+        
+        <h3>CURRENTLY RIDING..</h3>
+        <p>Burton Parkitect 157''</p>
+
+      </div>
+
+      <div id="recent_drop" class="">
+        <p>RECENT DROPS</p><br/>
+        <img src="img/drop_02.png">
+         <img src="img/drop_03.png">
+         <img src="img/drop_02.png">
+         <img src="img/drop_03.png">
+         <img src="img/drop_02.png">
+         <img src="img/drop_03.png">
+      </div>
+        
+
+      
+
+    </div>  
+
+  
+</div>

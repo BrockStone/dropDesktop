@@ -36,6 +36,10 @@ angular.module('drop', ['ngRoute', 'firebase'])
       controller:'uploadCtrl',
       templateUrl:'templates/drop_upload.html'
     })
+    .when('/crew', {
+      controller:'uploadCtrl',
+      templateUrl:'templates/crew_profile.html'
+    })
     .otherwise({
       redirectTo:'/'
     });

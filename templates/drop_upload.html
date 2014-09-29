@@ -1,36 +1,49 @@
 <div id="consol">
+  
   <div class="row">
-    <div class="12u center_align">
-      
-      <img src="img/drop_logo_consol.png"><br/>
+      <div id="topbar" class="12u fixed">
+        <img src="img/drop_logo_consol.png">
+        
+          <a class="topbar_nav" href="#/drop_upload">DROP IT</a>
+          <a class="topbar_nav" href="#/userProfile">PROFILE</a>
+          <a class="topbar_nav" href="#/crew">CREW</a>
+          <a class="topbar_nav" href="">LOVE</a>
+          <a class="topbar_nav" href="">SETTINGS</a>
+        
+      </div>
     </div>
-  </div>
 
-  <div class="row">
-    <div class="12u center_align">    
 
-      <p>
-      <ul id="consol_nav">
-        <li><a href="#/drop_upload">DROP IT</a></li>
-        <li><a href="">PROFILE</a></li>
-        <li><a href="">CREW</a></li>
-        <li><a href="">LOVE</a></li>
-        <li><a href="">SETTINGS</a></li>
-      </ul>
-      </p>
-      <p>noienrfoeno</p>
-    </div>
-  </div>  
+  
 
     <div class="row">
-      <div class="12u center_align">
+      <div class="6u" id="upload_a_drop" style="padding-left: 120px;">
+
+        <h2>UPLOAD A DROP</h2>
+
+        <h3>Your Drop</h3>
+
+        <video style="" width="500" height="290" controls>
+            <source src="vids/sand.mp4" type="video/mp4">
+            <source src="movie.ogg" type="video/ogg">
+          Your browser does not support the video tag.
+          </video>
+      
+
+      <a class="btn btn-outline" href="">+ ADD DROP MEDIA</a><br/>
+      
+      </div>
+       <div class="6u" style="margin-top: 60px;">    
         <form>
-        <p>{{dropUploadData.approach}} - {{dropUploadData.inversion}} - {{dropUploadData.rotation}}</p>
+        
+        <h3>Trick Executed</h3>
+        
+        <p>{{dropUploadData.approach}} {{dropUploadData.inversion}}  {{dropUploadData.rotation}}</p>
 
         <div id="upload_form">
         <!-- Park Feature -->
 
-        <a class="btn btn-outline" href="">+ ADD DROP MEDIA</a><br/>
+        
        
         <input class="upload_form_control" type="text" ng-model="dropUploadData.approach" placeholder="APPROACH - Backside, Frontside, Cab..."><br/>
 
@@ -44,6 +57,11 @@
         <input class="upload_form_control" type="text" ng-model="dropUploadData.grab" placeholder="GRAB - Method, Mute, Stalefish..."><br/>
 
          <input class="upload_form_control" type="text" ng-model="dropUploadData.slide" placeholder="SLIDE - Boardslide, 50-50, Lipslide..."><br/>
+
+         <h3>Location</h3>
+         <a href="">use current location</a>
+
+         <input class="upload_form_control" type="text" ng-model="dropUploadData.slide" placeholder="Your Drop Location"><br/>
         
         <a class="btn btn-upload" href="">UPLOAD YOUR DROP</a>
 
